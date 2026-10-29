@@ -1,0 +1,72 @@
+<aside class="sidebar">
+    <a class="brand" routerLink="/dashboard">
+        <span class="brand-icon">
+            <i class="bi bi-activity"></i>
+        </span>
+
+        <span class="brand-copy">
+            <strong>FITPULSE</strong>
+            <small>FITNESS INTELLIGENCE</small>
+        </span>
+    </a>
+
+    <div class="sidebar-section-label">WORKSPACE</div>
+
+    <nav class="sidebar-nav">
+        <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <i class="bi bi-grid-1x2"></i>
+            <span>Overview</span>
+        </a>
+
+        <a routerLink="/workouts" routerLinkActive="active">
+            <i class="bi bi-lightning-charge"></i>
+            <span>Workouts</span>
+        </a>
+
+        <a routerLink="/exercises" routerLinkActive="active">
+            <i class="bi bi-journal-text"></i>
+            <span>Exercise Library</span>
+        </a>
+
+        <a routerLink="/progress" routerLinkActive="active">
+            <i class="bi bi-graph-up-arrow"></i>
+            <span>Progress Analytics</span>
+        </a>
+
+        <a routerLink="/goals" routerLinkActive="active">
+            <i class="bi bi-bullseye"></i>
+            <span>My Goals</span>
+        </a>
+
+        <a routerLink="/ai-coach" routerLinkActive="active">
+            <i class="bi bi-stars"></i>
+            <span>AI Fitness Coach</span>
+            <span class="new-badge">AI</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-section-label account-label">ACCOUNT</div>
+
+    <nav class="sidebar-nav">
+        <a routerLink="/profile" routerLinkActive="active">
+            <i class="bi bi-person-circle"></i>
+            <span>My Profile</span>
+        </a>
+
+        <a routerLink="/settings" routerLinkActive="active">
+            <i class="bi bi-gear"></i>
+            <span>Settings</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="member-avatar">S</div>
+
+        <div class="member-copy">
+            <strong>Soham</strong>
+            <small>Fitness Member</small>
+        </div>
+
+        <i class="bi bi-three-dots"></i>
+    </div>
+</aside>
